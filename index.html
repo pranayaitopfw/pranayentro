@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jay Halvaiwala - Pure Traditional Mithai</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+line-height:1.6;
+background:#fffaf0;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#c0392b,#e74c3c);
+color:white;
+text-align:center;
+padding:3rem 1rem;
+}
+
+header h1{
+font-size:2.5rem;
+margin-bottom:10px;
+}
+
+header p{
+font-size:1.1rem;
+}
+
+/* NAVBAR */
+
+nav{
+background:#8d1e1e;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+list-style:none;
+padding:10px;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+nav a:hover{
+color:#ffeb3b;
+}
+
+/* SECTION */
+
+section{
+padding:3rem 1rem;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#c0392b;
+}
+
+/* PRODUCTS */
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card h3{
+padding:10px;
+color:#c0392b;
+}
+
+.card p{
+padding:0 15px 20px;
+}
+
+/* CONTACT */
+
+.contact{
+background:#fdf2e9;
+text-align:center;
+}
+
+.contact-info{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:20px;
+}
+
+.contact-item{
+font-size:1rem;
+}
+
+/* FOOTER */
+
+footer{
+background:#2c2c2c;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:22px;
+padding:14px 16px;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+header h1{
+font-size:1.8rem;
+}
+
+header p{
+font-size:1rem;
+}
+
+nav ul{
+flex-direction:column;
+gap:10px;
+}
+
+.products{
+grid-template-columns:1fr;
+}
+
+.contact-info{
+flex-direction:column;
+gap:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Jay Halvaiwala</h1>
+<p>Pure Desi Ghee • Traditional Taste • Made with Love</p>
+</header>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#sweets">Our Sweets</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="about">
+<h2>Welcome to Jay Halvaiwala</h2>
+<p style="text-align:center;max-width:700px;margin:auto;">
+For decades, Jay Halvaiwala has been delighting sweet lovers with authentic handcrafted mithai made with pure desi ghee and traditional recipes.
+</p>
+</section>
+
+<section id="sweets">
+<h2>Our Special Sweets</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1605190852432-3b0e57e3e0e0?auto=format&fit=crop&w=800&q=80">
+<h3>Kaju Barfi</h3>
+<p>Premium cashew sweet made with pure ghee.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1633933358116-28a6896a17a0?auto=format&fit=crop&w=800&q=80">
+<h3>Gulab Jamun</h3>
+<p>Soft juicy balls soaked in sugar syrup.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1626199787468-8c59e0e552c8?auto=format&fit=crop&w=800&q=80">
+<h3>Besan Ladoo</h3>
+<p>Roasted gram flour ladoo with dry fruits.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-info">
+
+<div class="contact-item">
+<strong>📍 Address</strong><br>
+Main Market, Nanded, Maharashtra
+</div>
+
+<div class="contact-item">
+<strong>📞 Phone</strong><br>
++91 7620841256
+</div>
+
+<div class="contact-item">
+<strong>🕒 Timing</strong><br>
+8:00 AM – 10:00 PM
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Jay Halvaiwala</p>
+</footer>
+
+<a href="https://wa.me/917620841256" class="whatsapp">💬</a>
+
+</body>
+</html>
